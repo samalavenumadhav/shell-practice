@@ -2,4 +2,4 @@
 
 TIME_STAMP=$(date)
 
-echo "script executed at : $(date +%s)
+echo "script executed at : $(date+%s)
