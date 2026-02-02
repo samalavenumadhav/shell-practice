@@ -1,6 +1,6 @@
 #!/bim/bash
 
-echo "Please Enter your Userbame::"
+echo "Please Enter your Username::"
 read USER_NAME
 
 echo "Username is $USER_NAME"
