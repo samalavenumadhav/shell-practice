@@ -1,7 +1,8 @@
 #!/bin/bash
 
-$PERSON1=Trumph
-$PERSON2=putin
+PERSON1=$Trumph
+PERSON2=$putin
+
 echo "$PERSON1:: Hello $PERSON2 how are you?"
 echo "$PERSON2:: Hi $PERSON1, i am fine .how are you doing"
 echo "$PERSON1:: doing fine, what are you learning $PERSON2?"
