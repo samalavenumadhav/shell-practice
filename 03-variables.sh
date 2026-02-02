@@ -8,5 +8,5 @@ echo "Username is $USER_NAME"
 echo "Please enter Your password::"
 read -s password
 
-echo "Username is $password"
+
 
