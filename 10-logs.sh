@@ -1,0 +1,29 @@
+#!/bin/bash
+
+USEID=$(id -u)
+LOGS_FOLDER="/var/log/shell-script"
+LOGS_FOLDER="/var/log/shell-script/$0.log"
+
+if [ $USERID -ne 0 ]; then
+    
+    echo "Please run this script with root user access"
+
+    exit 1
+
+fi
+
+mkdir -p $LOGS_FOLDER
+
+VALIDATE(){
+    if [ $USERID -ne 0 ]
+
+    echo "$2....FAILURE" | tee -a $LOGS_FILE
+
+    exit 1
+
+    else
+
+    echo "$2....SUCCESS"
+    fi
+    
+}
