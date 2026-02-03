@@ -15,15 +15,15 @@ fi
 mkdir -p $LOGS_FOLDER
 
 VALIDATE(){
-    if [ $USERID -ne 0 ]
+    if [ $USERID -ne 0 ]; then 
 
-    echo "$2....FAILURE" | tee -a $LOGS_FILE
+         echo "$2....FAILURE" | tee -a $LOGS_FILE
 
-    exit 1
+         exit 1
 
     else
 
-    echo "$2....SUCCESS"
+         echo "$2....SUCCESS"
     fi
-    
+
 }
