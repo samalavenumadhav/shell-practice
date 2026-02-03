@@ -8,7 +8,7 @@ LOGS_FILE="/var/log/shell-script/$0.log"
 
 
 if [ $USERID -ne 0 ]; then
-   echo -e "R Please run this script wit root user access $N" | tee -a $LOGS_FILE
+   echo -e "$R Please run this script wit root user access $N" | tee -a $LOGS_FILE
    exit 1
 fi
 mkdir -p $LOGS_FOLDER
