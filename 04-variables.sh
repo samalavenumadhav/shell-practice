@@ -2,4 +2,4 @@
 
 START_TIME=$(date +%s)
 
-echo "script executed at : $START_TIME
+echo "script executed at : $START_TIME"s
