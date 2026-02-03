@@ -22,3 +22,14 @@ VALIDATE(){
        echo -e "$2....$G SUCCESS $N" | tee -a $LOGS_FILE
     fi
 }
+for package in $@ # sudo sh 14-loops.sh nginx mysql nodejs
+do
+    dnf list installed $package &>>$LOGS_FILE
+    if [ $? -ne 0 ]; then
+        echo "$package not installed, installing now"
+        dnf install $package -y &>>$LOGS_FILE
+        #VALIDATE $? "$package installation"
+    else
+        echo -e "$package already installed ... $Y SKIPPING $N"
+    fi
+done
