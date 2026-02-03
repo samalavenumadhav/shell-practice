@@ -8,4 +8,17 @@ echo "Please run this script with root user access"
 
 exit 1
 
+echo "Installing nginx"
+
+dnf install nginx -y
+
+if [$? -ne]; then
+
+echo "Installing Nginx....FAILURE"
+exit 1
+
+else
+
+echo "Installing nginx....is success"
+
 fi
